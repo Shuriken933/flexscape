@@ -1,21 +1,28 @@
-// main: flexara.scss
+// main: flexscape.scss
 
 /* ! Layout module */
 
-[class*=container] {
+/*[class*=container] {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 70%;
+  }*/
+
+  .container{
+    position: relative;
     max-width: 1200px;
     margin: 0 auto;
     width: 70%;
   }
-  
-  
+
+
   /* ! - Flex */
-  .container {
+  .container-flex {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
   }
-  
+
   .flex-item-15{flex-basis: 15%;}
   .flex-item-20{flex-basis: 20%;}
   .flex-item-25{flex-basis: 25%;}
@@ -35,36 +42,36 @@
   .flex-item-90{flex-basis: 90%;}
   .flex-item-95{flex-basis: 95%;}
   .flex-item-100{flex-basis: 100%;}
-  
-  
-  
+
+
+
   /* ! - Grid */
-  
+
   .grid{
       display: flex;
       flex-flow: row wrap;
       /*margin: 0 auto;*/
   }
-  
-  [class*=container--center] {position: absolute;}
-  .container--center{
+
+  [class*=container__center] {position: absolute;}
+  .container__center{
     left: 50%;
     transform: translate(-50%, -50%);
     top: 50%;
   }
-  .container--centerX{
+  .container__centerX{
     left: 50%;
     transform: translateX(-50%);
   }
-  .container--centerY{
+  .container__centerY{
     top: 50%;
     transform: translateY(-50%);
   }
-  
+
   [class*=col-] {
       padding: 0 20px;
   }
-  
+
   /* ! -- column */
   .col{padding: 0 20px; width: auto;}
   .col-10{width: 10%;}
@@ -87,7 +94,7 @@
   .col-90{width: 90%;}
   .col-95{width: 95%;}
   .col-100{width: 100%;}
-  
+
   /* ! -- width */
   .w-10{width: 10%;}
   .w-15{width: 15%;}
@@ -108,30 +115,30 @@
   .w-90{width: 90%;}
   .w-95{width: 95%;}
   .w-100{width: 100%;}
-  
+
   /* !  -- other  */
   *, *:before, *:after {
       -webkit-box-sizing: border-box;
       -moz-box-sizing: border-box;
       box-sizing: border-box;
   }
-  
-  
-  
-  
+
+
+
+
   /* !  @media - Smartphone  */
   @media (max-width: $media-smartphone) {
     [class*=col-] {width: 100%!important;}
     /*.col{width: 100%!important;}*/
     [class*=flex-item] {flex-basis: 100%!important;}
     [class*=w-] {width: 100%!important;}
-  
-    [class*=container] { width: 90%; }
+
+    .container { width: 90%; }
   }
-  
-  
+
+
   /* !  @media - tablet  */
   @media (max-width: $media-tablet){
-    [class*=container] { width: 85%; }
-  
+    .container { width: 85%; }
+
   }

@@ -1,0 +1,220 @@
+/* ! Fonts */
+/*Neue*/
+@font-face {
+  font-family: 'Neue Montreal';
+  src: url('fonts/NeueMontreal-Medium.woff2') format('woff2'),
+  url('NeueMontreal-Medium.woff') format('woff');
+}
+
+/* latin-ext */
+@font-face {
+  font-family: 'DM Sans';
+  src: local('DM Sans Regular'), local('DMSans-Regular'), url(fonts/DMsans-Regular.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+
+
+/* ! Typhograpy */
+p{line-height: 28px; font-family: 'DM Sans', sans-serif; margin-bottom: 0; margin-top: 0;}
+h1{ font-family: 'Neue Montreal'; margin-top: 0; margin-bottom: 16px;}
+h2{ font-family: 'Neue Montreal'; margin-top: 0; margin-bottom: 16px;}
+
+
+
+a{
+  color: #000;
+  text-decoration: none;
+  transition: all 0.5s cubic-bezier(.215, .61, .355, 1);
+}
+a:hover{
+  transform: scale(1.1);
+}
+
+
+
+
+/* ! Generics */
+
+.scroll-container{overflow:hidden;}
+
+img{
+  width: 100%;
+  box-shadow: 0px 50px 35px -30px rgb(0 0 0 / 20%);
+  /*transition: all 0.75s cubic-bezier(.215, .61, .355, 1);*/
+}
+img:hover{
+  /*box-shadow: none;*/
+  /*transform: translateY(5px);*/
+  /*transform: scale(1.1);*/
+}
+
+body{
+  background: url('img/background.png');
+  background-repeat: repeat-y;
+  background-attachment: fixed;
+}
+
+button{
+  cursor: pointer;
+  border-radius: 7px;
+  background: transparent;
+  padding: 10px 15px;
+  color: #253863;
+  border-color: #253863;
+  font-family: 'Neue Montreal';
+  transition: all 0.75s cubic-bezier(.215, .61, .355, 1);
+}
+button:hover{
+  background: #fff;
+  /*transform: scale(1.1);*/
+}
+
+
+.filter--blur{
+  position: fixed;
+  top: 0;
+  left: 0;
+  backdrop-filter: blur(30px);
+  background: #ffffffa1;
+  height: 100vh;
+  width: 100vw;
+  z-index: -1;
+}
+
+
+/* ! Menu */
+
+nav{
+  justify-content: unset!important;
+  width: 100%;
+  height: 60px;
+  background: #ffffffcf;
+  backdrop-filter: blur(20px);
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0px 38px 30px -25px rgb(0 0 0 / 11%);
+  transition: all 0.75s cubic-bezier(.215, .61, .355, 1);
+}
+nav:hover{
+  box-shadow: none;
+  transform: scale(0.99);
+  /*transform: translateY(5px);*/
+}
+
+#menu{
+  position: fixed;
+  top: 60px;
+  display: block;
+  left: auto;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 100;
+}
+
+#menu img.logo{
+  position: absolute;
+  width: 65px;
+  height: 140px;
+  top: 50%;
+  left: 50px;
+  transform: translateY(-50%);
+  /*z-index: 1;*/
+}
+
+nav ul.nav-left{position: relative;margin-left: 100px;}
+nav ul.nav-right{
+  position: relative;
+  display: inline-flex;
+  margin-left: auto;
+  margin-bottom: auto;
+  margin-top: auto;
+  margin-right: 50px;
+  align-items: center;
+}
+#menu img.icon--github{
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+}
+#menu img.icon--github:hover{
+  transform: scale(1.1);
+}
+nav button{
+  height: 40px;
+  display: inline-block;
+}
+
+/*nav ul li{display: inline-block;}*/
+
+nav ul li.active{text-decoration: underline;}
+
+.container-icon-button{
+  position: relative;
+  height: fit-content;
+}
+
+
+/* ! Header */
+header{
+  height: 100vh;
+  position: relative;
+}
+header .container-flex{
+  /*justify-content: unset;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);*/
+}
+header img{width: 100%;}
+header .container-flex__right{
+  display: flex;
+}
+header .container-flex__right img{
+  /*margin-top: auto;
+  margin-bottom: auto;*/
+}
+
+/*mini-slider*/
+#mini-slider{
+  position: absolute;
+  bottom: 10vh;
+}
+#mini-slider div{
+  display: flex;
+  justify-content: flex-end;
+}
+#mini-slider div img{
+  width: 20%;
+}
+
+
+/* ! Blog */
+#blog .container-flex{
+  justify-content: space-between;
+}
+
+
+/* ! Footer */
+footer .container-flex{
+  background: #ffffffcf;
+  backdrop-filter: blur(20px);
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0px 38px 30px -25px rgb(0 0 0 / 11%);
+  transition: all 0.75s cubic-bezier(.215, .61, .355, 1);
+}
+
+footer ul{list-style-type: disc;}
+footer ul li{display: inline-block;}
+footer ul li a{
+  font-weight: 900;
+  font-family: 'Neue Montreal';
+  font-size: 18px;
+}
+footer button{
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+}

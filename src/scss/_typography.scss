@@ -1,6 +1,17 @@
-// main: flexara.scss
+// main: flexscape.scss
 
-/* ! Typography */
+.title-1{font-size: 60px; margin-bottom: $margin-bottom-title-1;}
+.title-2{font-size: 48px; margin-bottom: $margin-bottom-title-2;}
+.title-3{font-size: 30px; margin-bottom: $margin-bottom-title-3;}
+.subtitle{font-size: 20px; margin-bottom: $margin-bottom-subtitle;}
+.paragraph{font-size: 18px; margin-bottom: $margin-bottom-paragraph;}
+
+.light{font-weight: 300;}
+.bold{font-weight: 700;}
+
+/* ! Generics */
+
+.text-center{text-align: center;}
 
 body {
   font-size: 16px;
@@ -8,8 +19,12 @@ body {
   font-family: 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-.light{font-weight: 300;}
-.bold{font-weight: 700;}
+nav {
+  ul{
+    list-style-type: none;
+    li{display: inline-block;}
+  }
+}
 
 
 /* ! - blockquote */
