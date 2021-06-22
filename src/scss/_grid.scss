@@ -1,5 +1,10 @@
 // main: flexscape.scss
 
+/* ! reset style*/
+body,
+html{font-size: 16px; box-sizing: border-box; margin: 0; padding: 0;}
+*,*:before, *:after{box-sizing: border-box;} /*seleziono tutti gli elementi della pagina*/
+
 /* ! Layout module */
 
 /*[class*=container] {
@@ -19,36 +24,34 @@
 
 
   /* ! - Flex */
-  .container-flex {
+  .flex {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: inherit;
   }
 
-  .flex-item-15{flex-basis: 15%;}
-  .flex-item-20{flex-basis: 20%;}
-  .flex-item-25{flex-basis: 25%;}
-  .flex-item-30{flex-basis: 30%;}
-  .flex-item-33{flex-basis: 33.33%;}
-  .flex-item-35{flex-basis: 35%;}
-  .flex-item-40{flex-basis: 40%;}
-  .flex-item-45{flex-basis: 45%;}
-  .flex-item-50{flex-basis: 50%;}
-  .flex-item-55{flex-basis: 55%;}
-  .flex-item-60{flex-basis: 60%;}
-  .flex-item-65{flex-basis: 65%;}
-  .flex-item-70{flex-basis: 70%;}
-  .flex-item-75{flex-basis: 75%;}
-  .flex-item-80{flex-basis: 80%;}
-  .flex-item-85{flex-basis: 85%;}
-  .flex-item-90{flex-basis: 90%;}
-  .flex-item-95{flex-basis: 95%;}
-  .flex-item-100{flex-basis: 100%;}
-
+  .flex-15{flex-basis: 15%;}
+  .flex-20{flex-basis: 20%;}
+  .flex-25{flex-basis: 25%;}
+  .flex-30{flex-basis: 30%;}
+  .flex-33{flex-basis: 33.33%;}
+  .flex-35{flex-basis: 35%;}
+  .flex-40{flex-basis: 40%;}
+  .flex-45{flex-basis: 45%;}
+  .flex-50{flex-basis: 50%;}
+  .flex-55{flex-basis: 55%;}
+  .flex-60{flex-basis: 60%;}
+  .flex-65{flex-basis: 65%;}
+  .flex-70{flex-basis: 70%;}
+  .flex-75{flex-basis: 75%;}
+  .flex-80{flex-basis: 80%;}
+  .flex-85{flex-basis: 85%;}
+  .flex-90{flex-basis: 90%;}
+  .flex-95{flex-basis: 95%;}
+  .flex-100{flex-basis: 100%;}
 
 
   /* ! - Grid */
-
   .grid{
       display: flex;
       flex-flow: row wrap;
@@ -132,7 +135,7 @@
   @media (max-width: $media-smartphone) {
     [class*=col-] {width: 100%!important;}
     /*.col{width: 100%!important;}*/
-    [class*=flex-item] {flex-basis: 100%!important;}
+    [class*=flex-] {flex-basis: 100%!important;}
     [class*=w-] {width: 100%!important;}
 
     .container { width: 90%; }

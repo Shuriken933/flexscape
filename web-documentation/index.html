@@ -21,10 +21,41 @@
 
 
     <!-- inizio MENU -->
-    <nav id="menu-1" class="">
+    <!--<nav id="menu-1" class="">
       <div class="container">
 
         <div class="container-flex navigation">
+          <img class="navigation__logo" src="img/f.svg" alt="">
+
+          <ul class="navigation__left">
+            <li class="pr-3 active"><a href="#">home</a></li>
+            <li class="pr-3"><a href="#">docs</a></li>
+            <li class="pr-3"><a href="#">templates</a></li>
+          </ul>
+          <ul class="navigation__right container__centerY">
+            <img class="icon--github mr-3" src="img/icons/github.svg" alt="github">
+            <button type="button" name="button">download</button>
+          </ul>
+
+          <div class="navigation__button">
+            <div class="icon-hamburger">
+              <span></span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </nav>-->
+    <!-- fine MENU -->
+
+
+
+    <!-- inizio MENU -->
+    <nav id="menu-1" class="">
+      <div class="container">
+
+        <div class="flex navigation">
           <img class="navigation__logo" src="img/f.svg" alt="">
 
           <ul class="navigation__left">
@@ -51,8 +82,8 @@
 
 
     <!-- inizio HEADER -->
-    <header data-scroll-section class="container mt-4">
-      <div class="container-flex container__centerY">
+    <header id="slider-1" data-scroll-section class="container mt-4">
+      <div class="flex container__centerY">
         <div class="flex-item-50 pr-1">
           <h1 class="title-1">Flexscape</h1>
           <p class="subtitle mb-3">front-end open source basato su flexbox, rapido e flessibile per qualsiasi utilizzo: mobile e tablet ready</p>
@@ -60,6 +91,7 @@
           <button type="button" name="button">download</button>
           <p class="mt-3">current version <b>alpha-0.1</b></p>
         </div>
+
         <div class="flex-item-50 pl-1 container-flex__right" class="flex-item-50">
           <img data-scroll data-scroll-speed="1.2" src="img/background.png" alt="">
         </div>
@@ -77,11 +109,13 @@
     </header>
     <!-- fine HEADER -->
 
+
     <hr class="my-4">
+
 
     <!-- inizio BLOG -->
     <div id="blog" data-scroll-section class="container">
-      <div class="container-flex">
+      <div class="flex">
         <h2 class="title-2 flex-item-100 text-center">Build anything</h2>
         <p class="subtitle flex-item-100 text-center mb-5">front-end open source basato su flexbox rapido e flessibile</p>
 
@@ -149,6 +183,7 @@
 
 
   <!--<script src="js/jquery-1.12.4.min.js"></script>-->
+  <script src="../src/js/carousel.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
