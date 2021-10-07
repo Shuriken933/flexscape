@@ -1,18 +1,23 @@
 // main: flexscape.scss
 
 /* ! - typography */
-$margin-bottom-title-1: 10px;
-$margin-bottom-title-2: 10px;
-$margin-bottom-title-3: 10px;
-$margin-bottom-subtitle: 10px;
-$margin-bottom-paragraph: 10px;
+$margin-bottom-title-1: 1rem;
+$margin-bottom-title-2: 1rem;
+$margin-bottom-title-3: 1rem;
+$margin-bottom-subtitle: 1rem;
+$margin-bottom-paragraph: 1rem;
 
 /* ! Spacing */
-$spacing-1: 10px;
+/*$spacing-1: 10px;
 $spacing-2: 20px;
 $spacing-3: 30px;
 $spacing-4: 60px;
-$spacing-5: 120px;
+$spacing-5: 120px;*/
+$spacing-1: 1rem;
+$spacing-2: 2rem;
+$spacing-3: 3rem;
+$spacing-4: 4rem;
+$spacing-5: 5rem;
 
 /* ! - Media query */
 $media-tablet: 991px;

@@ -3,7 +3,7 @@
 .title-1{font-size: 60px; margin-bottom: $margin-bottom-title-1; line-height: normal;}
 .title-2{font-size: 48px; margin-bottom: $margin-bottom-title-2; line-height: normal;}
 .title-3{font-size: 30px; margin-bottom: $margin-bottom-title-3; line-height: normal;}
-.subtitle{font-size: 20px; margin-bottom: $margin-bottom-subtitle; line-height: normal;}
+.subtitle{font-size: 20px; margin-bottom: $margin-bottom-subtitle;}
 .paragraph{font-size: 18px; margin-bottom: $margin-bottom-paragraph;}
 
 .text-center{
@@ -44,6 +44,9 @@ nav {
     li{display: inline-block;}
   }
 }
+
+/* ! Colors */
+.bg-white{background: #fff;}
 
 
 /* ! - blockquote */

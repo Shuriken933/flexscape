@@ -1,8 +1,3 @@
-const scroller = new LocomotiveScroll({
-  el: document.querySelector('[data-scroll-container]'),
-  smooth: true
-});
-
 $( document ).ready(function() {
 
   $( ".navigation__button" ).on('click', function() {

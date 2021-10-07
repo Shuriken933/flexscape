@@ -5,50 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Home</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
-  <link rel="stylesheet" href="css/locomotive-scroll.min.css">
   <link rel="stylesheet" href="../src/scss/flexscape.min.css">
   <link rel="stylesheet" href="style.css">
 
-  <!--<script src="js/swup.min.js"></script>
-  <script src="js/SwupBodyClassPlugin.min.js"></script>
-  <script src="js/SwupHeadPlugin.min.js"></script>-->
 </head>
 <body class="m-0">
-  <div class="scroll-container" data-scroll-container>
+  <div class="">
 
     <div class="filter--blur"></div>
-
-
-    <!-- inizio MENU -->
-    <!--<nav id="menu-1" class="">
-      <div class="container">
-
-        <div class="container-flex navigation">
-          <img class="navigation__logo" src="img/f.svg" alt="">
-
-          <ul class="navigation__left">
-            <li class="pr-3 active"><a href="#">home</a></li>
-            <li class="pr-3"><a href="#">docs</a></li>
-            <li class="pr-3"><a href="#">templates</a></li>
-          </ul>
-          <ul class="navigation__right container__centerY">
-            <img class="icon--github mr-3" src="img/icons/github.svg" alt="github">
-            <button type="button" name="button">download</button>
-          </ul>
-
-          <div class="navigation__button">
-            <div class="icon-hamburger">
-              <span></span>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </nav>-->
-    <!-- fine MENU -->
-
 
 
     <!-- inizio MENU -->
@@ -82,81 +46,74 @@
 
 
     <!-- inizio HEADER -->
-    <header id="slider-1" data-scroll-section class="container mt-4">
-      <div class="flex container__centerY">
-        <div class="flex-item-50 pr-1">
+    <header class="container mb-4">
+      <div class="flex">
+        <div class="flex-50 pr-1">
           <h1 class="title-1">Flexscape</h1>
-          <p class="subtitle mb-3">front-end open source basato su flexbox, rapido e flessibile per qualsiasi utilizzo: mobile e tablet ready</p>
+          <p class="subtitle mb-2">front-end open source basato su flexbox e grid, rapido e flessibile per qualsiasi utilizzo: mobile e tablet ready</p>
           <button class="mr-2" type="button" name="button">get started</button>
           <button type="button" name="button">download</button>
-          <p class="mt-3">current version <b>alpha-0.1</b></p>
+          <p class="mt-2">current version <b>alpha-0.1</b></p>
+
         </div>
 
-        <div class="flex-item-50 pl-1 container-flex__right" class="flex-item-50">
-          <img data-scroll data-scroll-speed="1.2" src="img/background.png" alt="">
+        <div class="flex-50 pl-1 container-flex__right">
+          <img src="img/background.png" alt="">
         </div>
 
-      </div>
-
-      <div id="mini-slider" class="container-flex">
-        <div class="flex-item-100 mt-3">
-          <img class="ml-2" src="img/background.png" alt="">
-          <img class="ml-2" src="img/background.png" alt="">
-          <img class="ml-2" src="img/background.png" alt="">
-        </div>
       </div>
 
     </header>
     <!-- fine HEADER -->
 
 
-    <hr class="my-4">
-
-
     <!-- inizio BLOG -->
-    <div id="blog" data-scroll-section class="container">
-      <div class="flex">
-        <h2 class="title-2 flex-item-100 text-center">Build anything</h2>
-        <p class="subtitle flex-item-100 text-center mb-5">front-end open source basato su flexbox rapido e flessibile</p>
+    <div id="blog" class="container">
+      <h2 class="title-2 text-center">Build anything</h2>
+      <p class="subtitle text-center mb-3">front-end open source basato su flexbox rapido e flessibile</p>
 
-        <div data-scroll data-scroll-speed="1.1" class="flex-item-30">
+      <div class="flex">
+        <div class="flex-33 card">
           <img class="" src="img/background.png" alt="">
-          <h3>Subtitle of article</h3>
+          <h3><a href="#">Subtitle of article</a></h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         </div>
-        <div data-scroll data-scroll-speed="-1.1" class="flex-item-30">
+        <div class="flex-33 card">
           <img class="" src="img/background.png" alt="">
-          <h3>Subtitle of article</h3>
+          <h3><a href="#">Subtitle of article</a></h3>
           <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         </div>
-        <div data-scroll data-scroll-speed="1.2" class="flex-item-30">
+        <div class="flex-33 card">
           <img class="" src="img/background.png" alt="">
-          <h3>Subtitle of article</h3>
+          <h3><a href="#">Subtitle of article</a></h3>
           <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         </div>
       </div>
 
+      <p class="text-right my-2">
+        <a href="#"><strong>vai al blog</strong></a>
+        <img class="icon ml-1" src="img/icons/short-arrow.svg" alt="">
+      </p>
 
     </div>
 
     <!-- fine BLOG -->
 
-    <hr class="my-4">
 
 
     <!-- inizio FOOTER -->
-    <footer data-scroll-section class="container">
-        <div class="container-flex p-4">
-          <div class="flex-item-100">
-            <p>Designed and built with all the love in the world by the Bootstrap team with the help of our contributors.</p>
+    <footer class="container my-4 p-2">
+        <div class="flex">
+          <div class="flex-100">
+            <p>Designed and built by <strong>Eros Agostini</strong> .</p>
           </div>
-          <div class="flex-item-100 mb-2">
-            <p>Currently v5.0.0-beta3. Code licensed MIT, docs CC BY 3.0.</p>
+          <div class="flex-100 mb-2">
+            <p>Currently <strong>v0.1-alpha</strong> . Code licensed Open Source.</p>
           </div>
-          <div class="flex-item-50" style="position: relative;">
+          <div class="flex-50" style="position: relative;">
             <button type="button" name="button">download</button>
           </div>
-          <div class="flex-item-50">
+          <div class="flex-50">
             <ul>
               <li class="mx-2"><a href="">GitHub</a></li>
               <li class="mx-2"><a href="">About</a></li>
@@ -168,25 +125,12 @@
     </footer>
     <!-- fine FOOTER -->
 
-    <hr class="my-4">
-
-
-
-
-
-
-
-
-
 
   </div>
 
 
   <!--<script src="js/jquery-1.12.4.min.js"></script>-->
-  <script src="../src/js/carousel.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
 
   <script src="js/scripts.js"></script>
 

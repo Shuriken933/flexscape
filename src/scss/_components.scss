@@ -1,0 +1,21 @@
+// main: flexscape.scss
+
+.icon{
+  width: 18px;
+  position: relative;
+  top: 4px;
+}
+
+/* ! Cards */
+.card{
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.card:first-child {
+  padding-left: 0;
+}
+
+.card:last-child {
+  padding-right: 0;
+}

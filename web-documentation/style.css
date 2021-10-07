@@ -25,18 +25,17 @@ h2{ font-family: 'Neue Montreal'; margin-top: 0; margin-bottom: 16px;}
 a{
   color: #000;
   text-decoration: none;
+  transform: scale(1);
   transition: all 0.5s cubic-bezier(.215, .61, .355, 1);
 }
 a:hover{
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 
 
 
 
 /* ! Generics */
-
-.scroll-container{overflow:hidden;}
 
 img{
   width: 100%;
@@ -234,12 +233,8 @@ button:hover{
 
 
 
-
-
-
-
 /* ! Header */
-
+header{margin-top: 180px;}
 
 /*mini-slider*/
 
@@ -252,7 +247,7 @@ button:hover{
 
 
 /* ! Footer */
-footer .container-flex{
+footer{
   background: #ffffffcf;
   backdrop-filter: blur(20px);
   position: relative;
@@ -276,8 +271,10 @@ footer button{
 
 
 
-
-/* ! -- Smartphone */
+/* ! ---------------------- */
+/* ! RESPONSIVE */
+/* ! - Smartphone */
+/* ! -- Menu */
 @media (max-width: 768px) {
   #menu-1 {top: 25px;}
   #menu-1 .navigation{height: 46px;}
@@ -306,7 +303,6 @@ footer button{
       left: 50%;
       transform: translateX(-25%);
   }
-
 
   #menu-1 .navigation__button {
     display: block;
@@ -356,7 +352,6 @@ footer button{
     display: block;
   }
 
-
   #menu-1 .navigation__button--open .icon-hamburger span {
     background: transparent;
   }
@@ -368,10 +363,9 @@ footer button{
       transform: rotate(-45deg);
       margin-top: 0;}
 
-  /*header*/
+/* ! -- Header */
   header{
     margin-top: 30px;
   }
-
 
   }
