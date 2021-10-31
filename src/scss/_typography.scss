@@ -6,13 +6,11 @@
 .subtitle{font-size: 20px; margin-bottom: $margin-bottom-subtitle;}
 .paragraph{font-size: 18px; margin-bottom: $margin-bottom-paragraph;}
 
-.text-center{
-    text-align: center;
-    margin-right: auto;
-    margin-left: auto;
-  }
+.text-center{text-align: center; margin-right: auto; margin-left: auto;}
 .text-left{text-align: left; margin-right: auto;}
 .text-right{text-align: right; margin-left: auto;}
+
+.uppercase{text-transform: uppercase;}
 
 .light{font-weight: 300;}
 .bold{font-weight: 700;}
@@ -47,6 +45,7 @@ nav {
 
 /* ! Colors */
 .bg-white{background: #fff;}
+.bg-black{background: #000;}
 
 
 /* ! - blockquote */
