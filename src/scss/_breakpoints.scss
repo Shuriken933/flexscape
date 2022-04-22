@@ -1,0 +1,24 @@
+// main: flexscape.scss
+
+
+/* ! no-Tablet */
+@media (min-width: 768.01px) {
+  .md{display: none!important;}
+  .lg{display: block!important;}
+}
+/* ! Tablet */
+@media (max-width: 768px) {
+  .lg{display: none!important;}
+}
+
+/* ! no-Smartphone */
+@media (min-width: 576.01px) {
+  .sm{display: none!important;}
+  .md{display: block!important;}
+}
+
+
+/* ! Smartphone */
+@media (max-width: 576px) {
+  .sm{display: block!important;}
+}
